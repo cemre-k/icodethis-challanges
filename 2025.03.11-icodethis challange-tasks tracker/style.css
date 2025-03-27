@@ -1,0 +1,104 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top right, #0e0f29,#1C2156);
+    
+    z-index: -1;
+}
+
+
+.container{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);    
+    width:390px;
+    height :250px;border-radius: 20px;
+    padding: 25px;
+    background:linear-gradient(#F90592 3px ,#1d215e 4px);
+    box-shadow: 0 0 45px 9px #000000;
+    color:white;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: space-between; /* Push select to the right */
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack p.big and p.small */
+    font-weight: 800;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header p.big {
+    margin-bottom: 6px;
+}
+
+header p.small {
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.651);
+}
+
+select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #1d215e;
+    appearance:none;
+    color:white;
+}
+/* Wrapper to position the select properly */
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+    border:2px solid #0e102e;
+    border-radius: 50px;
+}
+
+/* Style the select */
+.select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #1d215e;
+    color: transparent; /* Hide selected text */
+    border: none;
+    cursor: pointer;
+}
+
+/* Fake "..." using ::after */
+.select-wrapper::after {
+    content: "...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none; /* Prevent interaction */
+}
+
+
+
+ p.content{
+    font-weight: 100;
+
+ }
+ 

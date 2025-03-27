@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.container{
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    aspect-ratio: 2/3;
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    background:linear-gradient(90deg,rgb(246, 162, 147),rgb(255, 105, 106)) ;
+    display: flex;
+    margin: -10px 0 0 -10px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 50px;
+    color: white;
+}
+.header .img-side{
+   
+    width:110px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.header .img-side img{
+    width: 30px;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 50px;    
+}
+.header .img-side img:first-child{
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+}
+
+.header .img-side img:nth-child(2){
+    position: absolute;
+    left: 40px;
+    z-index: 1;
+}
+.header .img-side img:nth-child(3){
+    position: absolute;
+    left: 65px;
+    z-index: 2;
+}
+
+
+.header h2{    
+    font-size: 12px;
+    padding: 0;
+    margin: 8px 0;
+}
+.header p{
+    margin: 0;
+}
+
+.content{
+    border-top:1px solid rgba(255, 255, 255, 0.663);
+    position: relative;
+    background: rgb(39, 38, 57);
+    
+    width: 300px;
+    height:300px;
+    box-sizing: border-box;
+    margin: 0 0 0 -10px;
+    padding-top: 1px;
+}
+.content .message{
+    padding-top: 3px;
+    background-color: rgb(58, 57, 76);
+    box-sizing: border-box;
+    width: 200px;
+    min-height: 40px;
+    height: fit-content;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 6px;
+    position: relative;
+    
+}
+.content .message p{
+    margin-left: 6px;
+    font-size: 12px;
+    color:white
+}
+.content .message img{
+    position: absolute;
+    left:-50px;
+    border:1px solid red;
+    box-sizing: border-box;
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+}
+.content .message.sent {
+    margin-left: auto; 
+    margin-right: 60px; 
+    
+}
+
+.content .message.sent img {
+    position: absolute;
+    right: -50px; 
+    left: auto; 
+    border: 1px solid green; 
+}
+.write-send{
+    background-color: rgb(58, 57, 76);
+    border-top: 2px solid grey;
+    box-sizing: border-box;
+    margin-left: -10px;
+    padding-left: 35px;
+    padding-top: 35px;
+    height: 100px;
+    width: 300px;    
+}
+.write-send button{
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: rgb(58, 57, 76);
+    border:2px solid rgb(252, 124, 122);
+    color:white;    
+}
+.write-send button:active{
+    background-color:rgb(252, 124, 122);
+    border:2px solid rgb(58, 57, 76);
+}
+.write-send input[type="text"]{
+    border-radius: 7px;
+    border: none;
+    background-color:rgb(204, 203, 216) ;
+    height: 25px;
+    padding-left: 10px;
+    outline: none;
+}
+.policy{
+    position: absolute;
+    top:350px;
+    background-color: rgb(58, 57, 76);
+    color:white;    
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px;
+    margin: 0 0 0 -10px;
+    height: 100px;
+    opacity: 1;   
+}
+.policy p{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.policy p a{
+    color: rgb(252, 124, 122);
+}
+.policy button{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(58, 57, 76);
+    border:2px solid rgb(252, 124, 122);
+    border-radius: 50px;
+    color: white;
+    margin-top: 10px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+.policy button:active{
+    background-color: rgb(252, 124, 122);
+    border:2px solid rgb(58, 57, 76)
+}
+.container-toggle{
+   position: absolute;
+}
+#container-toggle-btn{
+    position: absolute;
+    left:100px;
+    top:240px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.743);
+    background-color: rgb(254, 113, 110);
+    color: white;
+
+}
+
+#container-toggle-btn:active{
+    background-color: rgba(254, 112, 110, 0.713);
+    transform: scale(0.95);
+}

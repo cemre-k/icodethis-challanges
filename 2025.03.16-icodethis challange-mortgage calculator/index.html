@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/slider.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Mortgage Calculator.</div>
+            <div class="form">
+                <form action="/index.html" method="post">
+                    <label for="purchase">
+                        <span>Purchase price: </span>
+                        <span class="slider-value" id="purchase-value">250.000</span>
+                        <input type="range" class="slider" id="purchase-slider" name="purchase" min="0" max="500000">
+                    </label>
+                    <label for="equity">
+                        <span>Equity: </span>
+                        <span class="slider-value" id="equity-value">50</span>
+                        <input type="range" class="slider" id="equity-slider" name="equity" min="0" max="500000">
+                    </label>
+                    <label for="pay-time">
+                        <span>Repayment time: </span>
+                        <span class="slider-value" id="pay-time-value">15</span>
+                        <span>years.</span>
+                        <input type="range" class="slider" id="pay-time-slider" name="pay-time" min="0" max="30">
+                    </label>
+                    <label for="loan-amount">
+                        <p>Loan amount:</p>
+                        <span>$</span>
+                        <span id="loan-amount">****</span>
+                    </label>
+                    <label for="per-month">
+                        <p>Payment per month</p>
+                        <span>$</span>
+                        <span id="payment-per-month">****</span>
+                    </label>
+                    <label for="#"></label>
+                    <button id="button">Calculate</button>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

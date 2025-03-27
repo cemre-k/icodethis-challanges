@@ -1,0 +1,51 @@
+body{
+    background:rgb(237, 238, 247);
+}
+
+.container{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50% ,-50%);    
+    width: 65%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    aspect-ratio: 16/9;
+    box-shadow: 0 0 0 15px white , 0 25px 15px rgba(0, 0, 0, 0.233) ;
+    
+}
+.form{
+    height: 100%;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left:0;
+    height: 100%;
+    align-content: center;
+    
+}
+form label{
+    
+    height :30%;
+    flex:1 1 calc(33.33% - 10px);
+    box-sizing: border-box;
+    margin:0;
+}
+
+form label p {
+    margin:0;
+}
+
+button{
+    width: 300px;
+    aspect-ratio: 4;
+    border-radius: 20px;
+    border:none;
+    background: rgb(87, 103, 254);
+    color: white;
+    box-shadow: 2px 3px 3px 3px rgba(0, 0, 0, 0.832);
+}
+
