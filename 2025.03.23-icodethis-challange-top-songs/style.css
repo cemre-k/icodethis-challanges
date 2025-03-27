@@ -4,7 +4,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(176deg, rgb(227, 105, 124) 0, rgb(227, 106, 124) 330px, white 333px);
+    background: linear-gradient(176deg, rgb(227, 105, 134) 0, rgb(227, 106, 124) 330px, white 333px);
     background-attachment: fixed; 
     display: flex;
     justify-content: center; 
