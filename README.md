@@ -4,5 +4,3 @@
 [Photo gallery]([https://www.example.com](https://cemre-k.github.io/icodethis-challanges/2025.03.21-icodethis-challange-photo-gallery/))
 [Switch]([https://www.example.com](https://cemre-k.github.io/icodethis-challanges/2025.03.22-icodethis-challange-switch/))
 [Top songs]([https://www.example.com](https://cemre-k.github.io/icodethis-challanges/2025.03.23-icodethis-challange-top-songs/))
-[Link Text](https://www.example.com)
-[Link Text](https://www.example.com)
