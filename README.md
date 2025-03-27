@@ -4,5 +4,5 @@
 - [Photo gallery]([https://www.example.com](https://cemre-k.github.io/icodethis-challanges/2025.03.21-icodethis-challange-photo-gallery/))
 - [Switch]((https://cemre-k.github.io/icodethis-challanges/2025.03.22-icodethis-challange-switch/))
 - [Top songs]((https://cemre-k.github.io/icodethis-challanges/2025.03.23-icodethis-challange-top-songs/))
-- [Top songs]((https://cemre-k.github.io/icodethis-challanges/2025.03.25-icodethis-challange-dropdown-menu/))
-- [Top songs]((https://cemre-k.github.io/icodethis-challanges/2025.03.27-icodethis-challange-chatbox))
+- [Dropdown menu]((https://cemre-k.github.io/icodethis-challanges/2025.03.25-icodethis-challange-dropdown-menu/))
+- [Chatbox]((https://cemre-k.github.io/icodethis-challanges/2025.03.27-icodethis-challange-chatbox))
