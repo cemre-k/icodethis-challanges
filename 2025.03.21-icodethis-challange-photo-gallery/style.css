@@ -1,0 +1,139 @@
+body{
+    background: rgb(221, 227, 233);
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;    
+    align-items: flex-start;
+    justify-content: flex-start;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    box-shadow: 8px 9px  20px  rgba(0, 0, 0, 0.248), -8px -9px 20px 3px rgba(255, 255, 255, 0.768);
+    width:80%;
+    max-width: 1250px;
+    aspect-ratio: 3/2;
+    
+}
+.header {
+    display: flex;
+    
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 30px;
+    padding-right: 10%;
+    box-sizing: border-box;
+    width: 100%; 
+    flex-wrap: wrap; 
+}
+.header a{
+    text-decoration: none;
+    color:rgb(47, 51, 54);
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+.header a.selected {
+    position: relative; 
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.header a.selected::after {
+    content: ''; 
+    position: absolute;
+    bottom: -2px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 50%; 
+    height: 2px;
+    background-color: black; 
+}
+
+.search-upload{
+    margin:0 auto;
+    width: 80%;
+    
+    padding:30px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.search-upload input{
+    box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.388);
+    border-radius: 3px;
+    border:none;
+    width:300px;
+    height: 5ch;
+}
+.search-upload input:focus{
+    outline: none;
+    border:none;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.388);
+}
+.search-upload button{
+    
+    background: rgb(47, 51, 54);
+    color:rgba(255, 255, 255, 0.816);
+    width: 115px;   
+    aspect-ratio: 3; 
+    font-size: 12px;
+    font-weight:lighter;
+    border-radius: 6px;
+    border:none;
+    box-shadow: 2px 3px 5px 1px rgba(44, 44, 44, 0.789);
+}
+
+.pictures {
+    display: flex; 
+    gap:10px;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin:10px auto;
+    width:80%;
+    
+}
+@media (min-width: 100px) {
+    .pictures {
+        justify-content: flex-start; 
+    }
+}
+
+.pic-square {
+    width: 150px;
+    aspect-ratio: 4/3;    
+    margin: 0;
+    padding: 0;
+    background-color: lightgray; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    .header a {
+        width: 100%; /* Make links take up full width */
+        text-align: center; /* Center the text */
+    }
+    .container{
+        aspect-ratio: 2/3;
+    }
+}
