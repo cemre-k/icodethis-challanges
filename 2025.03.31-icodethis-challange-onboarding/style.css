@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(248, 246, 255);
+    width: 100vw;
+    height: 100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    width: 340px;
+    height: 450px;
+}
+.container{
+    position: relative;
+    
+    width: 340px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px 1px gray;
+}
+
+.head h2{
+    margin-top: 5px;
+}
+.head p {
+    margin-left: 5px;
+}
+#slider{
+    background-color: rgb(22, 23, 46);
+}
+.slider-number{
+    margin: 10px ;
+    color: rgb(22, 23, 46);
+    font-size: 20px;
+    font-weight: 900;
+}
+.selections{
+    margin-top: 30px;
+   
+    height: 260px;
+}
+.selections label{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    height: 45px;    
+    border-radius: 50px;
+    transition: transform 0.1s, background-color 0.3s;
+}
+.selections label:hover{
+    background-color: rgba(128, 128, 128, 0.246);
+}
+.selections label:active{
+    transform: scale(0.94);
+    
+}
+input[type="checkbox"]+span{
+    border:1px solid grey;
+    box-sizing: border-box;
+    width: 30px;
+    aspect-ratio: 1;
+    margin-right: 10px;
+    margin-left: 4px;
+    border-radius: 400px;
+    transition: 0.3s;
+    position: relative;
+}
+input[type="checkbox"]:checked+span{
+    background-color: rgb(22, 23, 46);
+    
+}
+input[type="checkbox"]:checked+span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px; 
+    height: 12px; 
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center;
+    display: block;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+#skip{
+    all: unset;
+    cursor: pointer;
+    color: grey;
+    font: inherit;
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
+}
+#skip:hover{
+    text-decoration: underline;
+    color: rgb(22, 23, 46);
+}
+#visibility-toggle{
+    position: absolute;
+    bottom:-50px;
+    right: 15px;
+    height: 40px;
+    width: fit-content;
+    border-radius: 50px;
+    background-color: rgb(22, 23, 46);
+    color: white;
+}
+#visibility-toggle:active{
+    transform: scale(.94);
+}
+#visibility-toggle span{
+    position: relative;
+    margin-left: 6px;
+    margin-right: 6px;
+    color: black;
+    width: 12px;
+    z-index: 2;
+}
+#visibility-toggle span::before{
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    width: 16px;
+    aspect-ratio: 1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
